@@ -1,3 +1,3 @@
 Menggunakan Qgis Versi 3.36.0-Maidenhead
-<br>[![Layout PBT Rutin](https://img.youtube.com/vi/QgeVh85BGio/1.jpg)](https://youtu.be/QgeVh85BGio)</br>
+<br>[![YouTube](http://i.ytimg.com/vi/QgeVh85BGio/hqdefault.jpg)](https://www.youtube.com/watch?v=QgeVh85BGio)</br>
 

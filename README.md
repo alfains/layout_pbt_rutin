@@ -1,3 +1,14 @@
-Menggunakan Qgis Versi 3.36.0-Maidenhead
+# TOOL LAYOUT RUTIN
+Tool untuk mempermudah layout peta dengan menggunakan QGIS by alfainz
+
+## Requirement
+- QGIS Ver 3.36.0-Maidenhead
+
+## Install
+Bisa dilihat di video berikut
 <br>[![YouTube](http://i.ytimg.com/vi/QgeVh85BGio/hqdefault.jpg)](https://www.youtube.com/watch?v=QgeVh85BGio)</br>
+
+## Next
+- Rename new source when added to layers
+- auto load feature id and use list to render
 

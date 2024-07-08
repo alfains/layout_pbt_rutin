@@ -11,7 +11,7 @@ Bisa dilihat di video berikut
 ## Next
 - [x] Rename new source when added to layers
 - [x] Auto load layout file from data
-- [] auto load feature id and use list to render
-- [] Cache shp if exist
-- [] Using Atlas render engine
+- [ ] auto load feature id and use list to render
+- [ ] Cache shp if exist
+- [ ] Using Atlas render engine
 

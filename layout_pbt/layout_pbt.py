@@ -37,6 +37,7 @@ from .resources import *
 # Import the code for the dialog
 from .layout_pbt_dialog import LayoutPBTDialog
 import os.path
+import os
 import re
 
 
@@ -269,7 +270,8 @@ class LayoutPBT:
          project = QgsProject.instance()
          layout = QgsPrintLayout(project)
          layout.initializeDefaults()
-         with open(self.dlg.lineEdit_18.text()) as f:
+         layoutPath = os.path.join(self.plugin_dir, 'layout_pbt_t3.qpt') 
+         with open(layoutPath) as f:
             template_content = f.read()
          doc = QDomDocument()
          doc.setContent(template_content)

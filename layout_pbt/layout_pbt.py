@@ -78,6 +78,7 @@ class LayoutPBT:
         # Check if plugin was started the first time in current QGIS session
         # Must be set in initGui() to survive plugin reloads
         self.first_start = None
+        self.counter = 1
         #self.nib_digit_five = "01871"
         
 
@@ -227,6 +228,7 @@ class LayoutPBT:
         result = self.dlg.exec_()
         # See if OK was pressed
         if result:
+            self.counter += 1
             # Do something useful here - delete the line containing pass and
             # substitute with your code.
             pass
@@ -290,10 +292,8 @@ class LayoutPBT:
          layer_raster=self.dlg.lineEdit_17.text()
          self.iface.addRasterLayer(layer_raster, "Citra","gdal")
          layer_shp=self.dlg.lineEdit_16.text()
-         self.iface.addVectorLayer(layer_shp, "Persil Unduh","ogr")
+         self.iface.addVectorLayer(layer_shp, f'Persil Unduh {self.counter}',"ogr")
          
-         
-
     def edit_label(self):
         select_layout = QgsProject.instance().layoutManager().layoutByName(self.dlg.lineEdit_11.text())
         edit_no_pbt=select_layout.itemById('no_pbt')
@@ -335,7 +335,7 @@ class LayoutPBT:
 
     def symbology(self):         
          #layer_symbol=self.iface.activeLayer()
-         shp_name='Persil Unduh'
+         shp_name=f'Persil Unduh {self.counter}'
          layer_symbol= QgsProject.instance().mapLayersByName( shp_name )[0]
          
          

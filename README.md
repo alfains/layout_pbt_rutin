@@ -9,6 +9,8 @@ Bisa dilihat di video berikut
 <br>[![YouTube](http://i.ytimg.com/vi/QgeVh85BGio/hqdefault.jpg)](https://www.youtube.com/watch?v=QgeVh85BGio)</br>
 
 ## Next
-- Rename new source when added to layers
-- auto load feature id and use list to render
+-[x] Rename new source when added to layers
+-[] auto load feature id and use list to render
+-[] Cache shp if exist
+-[] Using Atlas render engine
 

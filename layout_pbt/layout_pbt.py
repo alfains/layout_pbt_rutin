@@ -250,19 +250,6 @@ class LayoutPBT:
         self.dlg.comboBox_4.clear()
         self.dlg.comboBox_4.addItems(self.dlg.comboBox_3.itemData(index))
 
-
-    #def clicker(self, index):
-     #   self.dlg.comboBox_2.clear()
-      #  self.prov = index
-       # for x in self.list_wilayah.get(index).keys():
-        #    self.dlg.comboBox_2.addItem(x)
-        
-
-    #def clicker2(self, index):
-     #   self.dlg.comboBox_3.clear()
-      #  self.kab = index
-       # self.dlg.comboBox_3.addItems(self.list_wilayah.get(self.prov).get(index).keys())
-
     def close(self):
         self.dlg.close()
 
@@ -338,45 +325,6 @@ class LayoutPBT:
          shp_name=f'Persil Unduh {self.counter}'
          layer_symbol= QgsProject.instance().mapLayersByName( shp_name )[0]
          
-         
-         
-
-             
-
-         #field = layer_symbol.fields().lookupField('NIB') # field which contains unique values\
-         #unique_values = layer_symbol.uniqueValues(field)
-         #categories = []
-         #for value in unique_values:
-          #   symbol = QgsSymbol.defaultSymbol(layer_symbol.geometryType())
-           #  category = QgsRendererCategory(value, symbol, str(value))
-           #  categories.append(category)
-             
-           #  myStyle = QgsStyle().defaultStyle()
-           #  ramp = myStyle.colorRamp('Reds') # pass any color ramp name e.g. 'Spectral'
-             
-            # renderer = QgsCategorizedSymbolRenderer('NIB', categories)
-           #  renderer.updateColorRamp(ramp)
-           #  layer_symbol.setRenderer(renderer)
-           #  layer_symbol.triggerRepaint()
-         #value=layer_symbol.selectByExpression('"NIB"=\'01871\'')
-         #value2=layer_symbol.selectByExpression('"NIB"=\'01871\'')
-         #simbologi dengan kategori tp baru uberhasil untuk 1 kategori
-         #categories =[]
-         #symbol = QgsSymbol.defaultSymbol(layer_symbol.geometryType()) 
-         #category1 = QgsRendererCategory('01871', symbol, '01871')
-         #category2 = QgsRendererCategory(value2,symbol,str(value2)) #ini masih error
-         #categories.append(category1)  
-         #categories.append(category2) 
-         #renderer = QgsCategorizedSymbolRenderer('NIB')                
-         #renderer.addCategory(category1)
-         #renderer.addCategory(category2)
-         #layer_symbol.setRenderer(renderer)
-         #layer_symbol.triggerRepaint()
-
-         
-         # define some rules: label, expression, color name, (min scale, max scale)
-         #line_width=float(1)
-         #line_width2=float(2)
          rules = (("Selain {}".format(self.nib_digit_five), 'NIB IS NOT \'{}\''.format(self.nib_digit_five), 'black', None),("{}".format(self.nib_digit_five), 'NIB=\'{}\''.format(self.nib_digit_five), 'black', None))
         # create a new rule-based renderer
          symbol = QgsSymbol.defaultSymbol(layer_symbol.geometryType())
@@ -532,8 +480,7 @@ class LayoutPBT:
          #map.setScale(map_scale)
 
          #extent and scale layout based on layer using flexible scale
-         shp_name2='{}'.format(self.nib_digit_five)
-         layer_to_extent= QgsProject.instance().mapLayersByName( shp_name2 )[0]
+         layer_to_extent= QgsProject.instance().mapLayersByName( shp_name )[0]
          select_layout2 = QgsProject.instance().layoutManager().layoutByName(self.dlg.lineEdit_11.text())
          map = select_layout2.itemById('map_layout')
          scale_bar = select_layout2.itemById('scale_bar')

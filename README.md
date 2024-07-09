@@ -14,4 +14,5 @@ Bisa dilihat di video berikut
 - [ ] auto load feature id and use list to render
 - [ ] Cache shp if exist
 - [ ] Using Atlas render engine
-
+- [ ] Label Size Adjustment According to Layout Scale
+- [ ] Dynamic Exported SHP Location

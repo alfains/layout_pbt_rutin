@@ -16,3 +16,4 @@ Bisa dilihat di video berikut
 - [ ] Using Atlas render engine
 - [ ] Label Size Adjustment According to Layout Scale
 - [ ] Dynamic Exported SHP Location
+- [ ] Pop Up Window Scroll Bar

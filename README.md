@@ -1,5 +1,5 @@
 # TOOL LAYOUT RUTIN
-Tool untuk mempermudah layout peta dengan menggunakan QGIS by alfainz
+Tool untuk mempermudah layout peta dengan menggunakan QGIS by alfains
 
 ## Requirement
 - QGIS Ver 3.36.0-Maidenhead
